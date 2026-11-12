@@ -1,0 +1,234 @@
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.3z"/></symbol>
+    <symbol id="i-logo" viewBox="0 0 64 64">
+      <circle cx="13" cy="25" r="6.2" fill="#00FA4B"/><circle cx="24" cy="14" r="6.6" fill="#00FA4B"/><circle cx="40" cy="14" r="6.6" fill="#00FA4B"/><circle cx="51" cy="25" r="6.2" fill="#00FA4B"/>
+      <clipPath id="pad"><path d="M32 30c-9 0-18 9-18 17 0 6 5 9 10 8 3-.6 5-2 8-2s5 1.4 8 2c5 1 10-2 10-8 0-8-9-17-18-17z"/></clipPath>
+      <g clip-path="url(#pad)" fill="#00FA4B"><rect x="10" y="29" width="44" height="3.2"/><rect x="10" y="34" width="44" height="3.2"/><rect x="10" y="39" width="44" height="3.2"/><rect x="10" y="44" width="44" height="3.2"/><rect x="10" y="49" width="44" height="3.2"/><rect x="10" y="54" width="44" height="3.2"/></g>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="aviso" id="aviso" hidden></div>
+
+<header class="nav" id="nav">
+  <div class="in">
+    <a class="brand" href="#inicio" aria-label="Huellitas 3D, inicio"><svg aria-hidden="true"><use href="#i-logo"/></svg><span>Huellitas <b>3D</b></span></a>
+    <nav class="links" aria-label="Principal"><a href="#trabajos">Trabajos</a><a href="#proceso">Proceso</a><a href="#servicios">Servicios</a><a href="#electronica">Electrónica</a><a href="#precio">Precio</a><a href="#nosotros">Nosotros</a><a href="#preguntas">Preguntas</a></nav>
+    <a class="btn primary js-wa" data-msg="Hola Huellitas 3D, quiero cotizar un proyecto" href="https://wa.me/593992642244" target="_blank" rel="noopener">Cotizar</a>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="seq seq-hero" id="heroSeq" aria-label="Inicio">
+    <div class="pin">
+      <canvas class="seq-cv" id="cvBaily" role="img" aria-label="Animación: un rollo de filamento verde construye capa por capa la figura de un perrito y luego se pinta a mano"></canvas>
+      <div class="seq-copy">
+        <div class="stage on" data-s="0">
+          <span class="kicker">Diseño e impresión 3D · Cuenca, Ecuador</span>
+          <h1 id="eslogan"><span class="w">Deja</span> <span class="w">tu</span> <span class="w g">huella.</span></h1>
+          <p class="lede" id="heroSub">Convertimos tu idea en una pieza real: figuras y retratos personalizados, piezas funcionales, maquetas, pintado a mano y proyectos de electrónica y robótica.</p>
+          <div class="actions">
+            <a class="btn primary js-wa" data-msg="Hola Huellitas 3D, quiero cotizar un proyecto" href="https://wa.me/593992642244" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Cotiza por WhatsApp</a>
+            <a class="btn line" href="#trabajos">Ver trabajos</a>
+          </div>
+          <div class="stats">
+            <span><b><span id="stRating">5,0</span> ★</b>en Google Maps</span>
+            <span><b><span class="count" id="stWorks" data-to="12">12</span>+</b>trabajos publicados</span>
+            <span><b id="stPrice">$1,25</b>por hora de impresión</span>
+          </div>
+        </div>
+        <div class="stage" data-s="1"><span class="kicker">01 · Impresión 3D</span><h2>Capa por capa.</h2><p class="lede">El filamento se convierte en tu figura, con la precisión de una impresora 3D.</p></div>
+        <div class="stage" data-s="2"><span class="kicker">02 · Pintado a mano</span><h2>Lista para dejar huella.</h2><p class="lede">Retratos de mascotas, figuras y piezas únicas, pintadas con detalle y listas para regalar.</p>
+          <div class="actions"><a class="btn primary js-wa" data-msg="Hola Huellitas 3D, quiero una figura personalizada" href="https://wa.me/593992642244" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Quiero la mía</a></div></div>
+      </div>
+      <div class="seq-meter" aria-hidden="true"><span id="meterBaily"></span></div>
+      <div class="seq-hint" id="hintBaily" aria-hidden="true">Desliza para imprimir ↓</div>
+    </div>
+  </section>
+
+  <div class="strip" aria-hidden="true"><div class="track" id="strip"></div></div>
+
+  <section id="trabajos" aria-labelledby="t-trab">
+    <div class="in">
+      <div class="head"><div><span class="kicker">Trabajos realizados</span><h2 id="t-trab">Cada pieza tiene su historia.</h2></div><p>Toca cualquier trabajo para verlo en grande, hacer zoom y ver otros ángulos.</p></div>
+      <div class="filters" id="filters" role="group" aria-label="Filtrar trabajos por categoría"></div>
+      <div class="grid" id="grid"><p class="empty">Cargando trabajos…</p></div>
+    </div>
+  </section>
+
+  <section id="proceso" class="process" aria-labelledby="t-proc" style="background:var(--bg2);border-block:1px solid var(--line)">
+    <div class="in">
+      <div class="head"><div><span class="kicker">Proceso</span><h2 id="t-proc">De tu idea a tus manos.</h2></div><p>Así trabajamos cada pedido, paso a paso.</p></div>
+      <div class="wrap">
+        <div class="sticky" id="procSticky">
+          <span class="num" id="procNum">01 / 04</span>
+          <div class="frame on" data-i="0">
+            <svg viewBox="0 0 400 420" role="img" aria-label="Conversación de WhatsApp pidiendo una figura">
+              <rect x="40" y="40" width="320" height="340" rx="22" fill="#0B140E" stroke="#1E2F22"/>
+              <rect x="40" y="40" width="320" height="56" rx="22" fill="#0F1F14"/><rect x="40" y="74" width="320" height="22" fill="#0F1F14"/>
+              <circle cx="78" cy="68" r="14" fill="#00FA4B"/><text x="104" y="74" font-family="Figtree,sans-serif" font-size="15" fill="#F2F5F1" font-weight="600">Huellitas 3D</text>
+              <rect x="64" y="120" width="230" height="58" rx="14" fill="#1B241C"/><text x="80" y="145" font-family="Figtree,sans-serif" font-size="14" fill="#D7DED7">Hola, ¿pueden hacer una</text><text x="80" y="165" font-family="Figtree,sans-serif" font-size="14" fill="#D7DED7">figura de mi perrito? 🐾</text>
+              <rect x="64" y="192" width="150" height="110" rx="14" fill="#1B241C"/><rect x="74" y="202" width="130" height="90" rx="8" fill="#2A3A2C"/><circle cx="139" cy="247" r="22" fill="#3C5240"/>
+              <rect x="150" y="316" width="186" height="44" rx="14" fill="#00FA4B"/><text x="166" y="343" font-family="Figtree,sans-serif" font-size="14" fill="#02140A" font-weight="600">¡Claro! Te cotizamos 🙌</text>
+            </svg>
+          </div>
+          <div class="frame" data-i="1">
+            <svg viewBox="0 0 400 420" role="img" aria-label="Modelo 3D en malla de alambre de una huella">
+              <g fill="none" stroke="#00FA4B" stroke-width="1.2" opacity=".9">
+                <ellipse cx="200" cy="270" rx="92" ry="78"/><ellipse cx="200" cy="270" rx="70" ry="58" opacity=".5"/><ellipse cx="200" cy="270" rx="46" ry="38" opacity=".35"/>
+                <path d="M108 270H292M200 192V348M136 216L264 324M264 216L136 324" opacity=".35"/>
+                <ellipse cx="98" cy="170" rx="30" ry="38"/><ellipse cx="160" cy="118" rx="30" ry="40"/><ellipse cx="240" cy="118" rx="30" ry="40"/><ellipse cx="302" cy="170" rx="30" ry="38"/>
+                <path d="M98 132V208M160 78V158M240 78V158M302 132V208M68 170H128M130 118H190M210 118H270M272 170H332" opacity=".35"/>
+              </g>
+              <g font-family="IBM Plex Mono,monospace" font-size="12" fill="#7FA88C"><text x="40" y="390">huella.stl · 12.480 triángulos</text></g>
+            </svg>
+          </div>
+          <div class="frame" data-i="2"><img src="img/judas-gris.webp" alt="Figura de San Judas Tadeo recién impresa en gris" loading="lazy"></div>
+          <div class="frame" data-i="3"><img src="img/judas-color.webp" alt="La misma figura de San Judas Tadeo pintada a mano" loading="lazy"></div>
+          <div class="bar" id="procBar"></div>
+        </div>
+        <div class="steps">
+          <div class="step on" data-i="0"><div class="n">01 · Idea</div><h3>Nos cuentas tu idea.</h3><p>Una foto, un boceto o tu archivo 3D por WhatsApp. La cotización es gratis y sin compromiso.</p></div>
+          <div class="step" data-i="1"><div class="n">02 · Diseño</div><h3>La modelamos en 3D.</h3><p>Si no tienes el archivo, lo diseñamos para ti y lo ajustamos hasta que te encante.</p></div>
+          <div class="step" data-i="2"><div class="n">03 · Impresión</div><h3>La imprimimos capa por capa.</h3><p>En PLA o PETG, con filamentos Bambu Lab y Sunlu. Pagas solo las horas de impresión.</p></div>
+          <div class="step" data-i="3"><div class="n">04 · Acabado</div><h3>La pintamos y te la entregamos.</h3><p>Pintado a mano con los colores que elijas, lista para regalar o usar.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios" aria-labelledby="t-svc">
+    <div class="in">
+      <div class="head"><div><span class="kicker">Servicios</span><h2 id="t-svc">Si se puede imaginar, se puede imprimir.</h2></div><p>Y si necesita moverse o encenderse, también lo armamos.</p></div>
+      <div class="svc" id="svc"></div>
+      <div class="duo">
+        <figure><video src="img/serie.mp4" poster="img/serie-poster.webp" muted loop playsinline autoplay preload="metadata" aria-label="Video de decenas de figuras de fauna de Galápagos alineadas"></video><figcaption>Producción en serie</figcaption></figure>
+        <figure><img src="img/medallas.webp" alt="Medallas impresas en 3D en filas" loading="lazy"><figcaption>Medallas y recuerdos</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+    <section class="seq seq-elec" id="electronica" aria-labelledby="t-elec">
+    <div class="pin">
+      <canvas class="seq-cv" id="cvPlc" role="img" aria-label="Animación: un PLC hecho con ESP32 se desarma en sus piezas: base impresa en 3D, fuente, placa, ESP32, relés y borneras"></canvas>
+      <div class="seq-copy">
+        <span class="kicker">Electrónica y robótica</span>
+        <h2 id="t-elec">Proyectos que funcionan de verdad.</h2>
+        <p class="lede">Este PLC con ESP32 es un proyecto universitario hecho en equipo: placa con relés, entradas aisladas y fuente propia, montada sobre una base impresa en 3D.</p>
+        <ol class="parts" id="partsPlc">
+          <li data-at="0.15"><b>Base impresa en 3D</b><span>Soporte a medida para la placa</span></li>
+          <li data-at="0.35"><b>Fuente reductora</b><span>Alimenta todo el circuito</span></li>
+          <li data-at="0.55"><b>ESP32</b><span>Control y conexión Wi-Fi</span></li>
+          <li data-at="0.75"><b>Relés y borneras</b><span>Para encender cargas y conectar sensores</span></li>
+        </ol>
+        <div class="actions"><a class="btn primary js-wa" data-msg="Hola Huellitas 3D, quiero cotizar un proyecto de electrónica" href="https://wa.me/593992642244" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Cotiza tu proyecto</a></div>
+      </div>
+      <div class="seq-meter" aria-hidden="true"><span id="meterPlc"></span></div>
+    </div>
+  </section>
+
+  <section id="precio" aria-labelledby="t-precio" style="background:var(--bg2);border-block:1px solid var(--line)">
+    <div class="in calc">
+      <div>
+        <span class="kicker">Precio claro</span>
+        <h2 id="t-precio">Pagas solo las horas de impresión.</h2>
+        <p class="lede" id="precioTxt">Con tu archivo o diseño 3D calculamos cuántas horas tarda la impresión. Cada hora cuesta $1,25 y el material ya está incluido. La cotización es gratis y sin compromiso.</p>
+        <div class="mat"><img src="img/filamento-estudio.webp" alt="Rollo de filamento verde de impresión 3D" loading="lazy"><p><b>Materiales:</b> filamentos de calidad Bambu Lab y Sunlu 2.0, en PLA y PETG.</p></div>
+      </div>
+      <div class="calc-box">
+        <h3 style="font-size:20px;font-weight:600;margin-bottom:18px">Calcula tu impresión</h3>
+        <div class="dial">
+          <div><label for="ch">Horas</label><div class="stepper"><button type="button" data-step="h,-1" aria-label="Menos una hora">−</button><input id="ch" type="number" inputmode="numeric" min="0" max="200" value="5"><button type="button" data-step="h,1" aria-label="Más una hora">+</button></div></div>
+          <div><label for="cm">Minutos</label><div class="stepper"><button type="button" data-step="m,-5" aria-label="Menos cinco minutos">−</button><input id="cm" type="number" inputmode="numeric" min="0" max="59" value="30"><button type="button" data-step="m,5" aria-label="Más cinco minutos">+</button></div></div>
+        </div>
+        <input type="range" id="cr" min="0" max="2880" step="5" value="330" aria-label="Tiempo total de impresión">
+        <div class="presets" aria-label="Ejemplos"><button type="button" data-min="90">Llavero · ~1 h 30</button><button type="button" data-min="330">Figura pequeña · ~5 h 30</button><button type="button" data-min="960">Figura grande · ~16 h</button></div>
+        <div class="result" aria-live="polite"><div><small id="cdec">5,50 h × $1,25</small><div class="big" id="cout">$6,88</div></div><a class="btn primary" id="ccta" href="https://wa.me/593992642244" target="_blank" rel="noopener">Pedir cotización</a></div>
+        <p class="note">Precio estimado solo de impresión. El diseño 3D y el pintado se cotizan aparte. Los ejemplos son tiempos aproximados; el tiempo exacto lo calculamos con tu archivo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nosotros" aria-labelledby="t-nos">
+    <div class="in about">
+      <video src="img/taller.mp4" poster="img/taller-poster.webp" muted loop playsinline autoplay preload="metadata" aria-label="Video de un portalápices y un organizador impresos en 3D en color fucsia"></video>
+      <div>
+        <span class="kicker">Nosotros · desde 2025</span>
+        <h2 id="t-nos">Todos dejamos una huella.</h2>
+        <div id="nosTxt"></div>
+        <div class="sig"><div class="av" aria-hidden="true">JM</div><div><b>John Macas</b><span>Fundador de Huellitas 3D</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="t-rev" style="padding-top:0">
+    <div class="in">
+      <span class="kicker" id="rvKicker">Reseñas en Google Maps · 5,0 ★</span>
+      <h2 id="t-rev">Lo dicen nuestros clientes.</h2>
+      <div class="reviews" id="reviews"></div>
+    </div>
+  </section>
+
+  <section id="preguntas" aria-labelledby="t-faq" style="padding-top:0">
+    <div class="in faq">
+      <span class="kicker">Preguntas frecuentes</span>
+      <h2 id="t-faq" style="margin-bottom:24px">Lo que siempre nos preguntan.</h2>
+      <div id="faq"></div>
+    </div>
+  </section>
+
+  <section class="final" aria-labelledby="t-final" style="border-top:1px solid var(--line)">
+    <div class="in">
+      <p class="big" id="t-final">¿Ya tienes tu idea?<br><span>Hagámosla real.</span></p>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:40px">
+        <a class="btn primary js-wa" data-msg="Hola Huellitas 3D, tengo una idea para imprimir" href="https://wa.me/593992642244" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Escríbenos por WhatsApp</a>
+      </div>
+      <div class="contact" id="contacto"></div>
+      <p style="margin-top:28px;color:var(--muted)" id="social"></p>
+    </div>
+  </section>
+
+  <section class="legal" aria-labelledby="t-legal">
+    <div class="in">
+      <h2 id="t-legal">Información legal</h2>
+      <details id="terminos"><summary>Términos y condiciones</summary><div class="doc">
+        <p>Estos términos aplican a los servicios de diseño 3D, impresión 3D, pintado y proyectos de electrónica y robótica de Huellitas 3D, de John Macas, en Cuenca, Ecuador.</p>
+        <ol><li>La cotización es gratuita y sin compromiso. La impresión se cobra por hora de impresión según la tarifa publicada en esta web. El diseño 3D, el pintado y los proyectos de electrónica se cotizan aparte.</li>
+        <li>Al aceptar la cotización, el cliente abona el 50% del precio para iniciar el trabajo y el saldo a la entrega.</li>
+        <li>Una vez iniciada la impresión no se aceptan cancelaciones ni devoluciones del abono, porque cada pieza se fabrica a pedido.</li>
+        <li>Los tiempos de entrega son estimados y dependen del tiempo de impresión y del pintado.</li>
+        <li>El cliente declara tener los derechos sobre las imágenes, diseños o personajes que solicita imprimir.</li>
+        <li>Huellitas 3D puede publicar fotos de los trabajos realizados como portafolio, salvo que el cliente pida lo contrario.</li></ol>
+      </div></details>
+      <details id="privacidad"><summary>Política de privacidad</summary><div class="doc">
+        <p>Este sitio no tiene formularios y no recoge datos personales. Si nos escribes por WhatsApp o correo, usamos tu nombre, número y los archivos que nos envías solo para cotizar y entregar tu pedido, conforme a la Ley Orgánica de Protección de Datos Personales del Ecuador. No vendemos ni compartimos tus datos con terceros.</p>
+        <p>Puedes pedir que eliminemos tus datos escribiendo a jhonorteg.ko@gmail.com.</p>
+      </div></details>
+      <details id="cookies"><summary>Cookies</summary><div class="doc"><p>Este sitio no usa cookies de seguimiento, analítica ni publicidad.</p></div></details>
+    </div>
+  </section>
+</main>
+
+<footer><div class="in"><span>© 2026 Huellitas 3D · Cuenca, Ecuador</span><span><a href="#terminos">Términos</a><a href="#privacidad">Privacidad</a><a href="#cookies">Cookies</a><a href="/admin/" rel="nofollow" id="adminLink">Admin</a></span></div></footer>
+
+<a class="fab js-wa" id="fab" data-msg="Hola Huellitas 3D, quiero cotizar un proyecto" href="https://wa.me/593992642244" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg><span>Escríbenos</span></a>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-labelledby="lbTitle">
+  <div class="stagebox" id="lbStage">
+    <img id="lbImg" alt="">
+    <button class="ctl prev" id="lbPrev" type="button" aria-label="Trabajo anterior">←</button>
+    <button class="ctl next" id="lbNext" type="button" aria-label="Trabajo siguiente">→</button>
+  </div>
+  <aside>
+    <span class="kicker" id="lbCat"></span>
+    <h3 id="lbTitle"></h3>
+    <p id="lbDesc"></p>
+    <div class="views" id="lbViews"></div>
+    <div class="thumbs" id="lbThumbs"></div>
+    <p class="hint">Toca la foto para hacer zoom · flechas del teclado para navegar · Esc para cerrar</p>
+    <a class="btn primary" id="lbCta" href="https://wa.me/593992642244" target="_blank" rel="noopener" style="align-self:flex-start"><svg aria-hidden="true"><use href="#i-wa"/></svg>Quiero algo así</a>
+  </aside>
+  <button class="close" id="lbClose" type="button" aria-label="Cerrar">✕</button>
+</div>

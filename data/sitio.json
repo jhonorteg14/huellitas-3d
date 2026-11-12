@@ -1,0 +1,103 @@
+{
+  "aviso": {
+    "activo": false,
+    "texto": "Retomaremos los servicios el 16 de diciembre. ¡Espéranos!",
+    "enlace": ""
+  },
+  "eslogan": "Deja tu huella.",
+  "hero_subtitulo": "Convertimos tu idea en una pieza real: figuras y retratos personalizados, piezas funcionales, maquetas, pintado a mano y proyectos de electrónica y robótica.",
+  "precio_hora": 1.25,
+  "material_incluido": true,
+  "modelo_destacado": "",
+  "servicios": [
+    {
+      "titulo": "Impresión 3D",
+      "descripcion": "Imprimimos tus diseños o los nuestros: piezas únicas o en cantidad.",
+      "precio_texto": "$1,25 por hora de impresión · material incluido",
+      "etiquetas": [
+        "Figuras",
+        "Funkos",
+        "Litofanías",
+        "Lienzos",
+        "Maquetas de arquitectura e ingeniería civil",
+        "Souvenirs"
+      ],
+      "imagen": "img/serie.webp"
+    },
+    {
+      "titulo": "Diseño 3D",
+      "descripcion": "Modelamos desde cero lo que necesitas: piezas mecánicas, prototipos funcionales o figuras personalizadas a partir de una foto.",
+      "precio_texto": "Se cotiza según el modelo",
+      "etiquetas": [
+        "Prototipos",
+        "Piezas mecánicas",
+        "Figuras desde foto"
+      ],
+      "imagen": "img/pinguino.webp"
+    },
+    {
+      "titulo": "Pintado personalizado",
+      "descripcion": "Le damos vida a cada pieza con pintura acrílica y detalles a mano, con los colores que tú elijas.",
+      "precio_texto": "Se cotiza según la pieza",
+      "etiquetas": [
+        "Acrílico",
+        "Detalles a mano"
+      ],
+      "imagen": "img/pintura.webp"
+    },
+    {
+      "titulo": "Electrónica y robótica",
+      "descripcion": "Diseñamos y armamos proyectos electrónicos y robóticos para escuela, colegio y universidad, con piezas impresas a medida.",
+      "precio_texto": "Se cotiza según el proyecto",
+      "etiquetas": [
+        "Escuela",
+        "Colegio",
+        "Universidad"
+      ],
+      "imagen": "img/plc-explotado.webp"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Cuánto cuesta imprimir una figura?",
+      "respuesta": "Depende de cuántas horas tarde en imprimirse. Cobramos $1,25 por hora de impresión, con el material incluido. Pasamos el tiempo a horas decimales: por ejemplo, 5 h 30 min son 5,5 h, es decir $6,88."
+    },
+    {
+      "pregunta": "¿Cómo me cotizan?",
+      "respuesta": "Envíanos por WhatsApp tu archivo 3D (STL o 3MF). Si no lo tienes, mándanos fotos o una descripción de lo que quieres y primero cotizamos el diseño. La cotización no tiene costo ni compromiso."
+    },
+    {
+      "pregunta": "¿Y si no tengo el modelo 3D?",
+      "respuesta": "Lo diseñamos por ti, desde una foto, un boceto o medidas. El diseño se cotiza aparte según su complejidad."
+    },
+    {
+      "pregunta": "¿Cuánto tarda mi pedido?",
+      "respuesta": "Lo que tarde la pieza en imprimirse, más el pintado si lo pides. Al cotizar te decimos el tiempo estimado."
+    },
+    {
+      "pregunta": "¿Cómo se paga?",
+      "respuesta": "Cuando aceptas la cotización, abonas la mitad del precio para empezar y el resto al entregar."
+    },
+    {
+      "pregunta": "¿Hacen proyectos de electrónica para el colegio o la universidad?",
+      "respuesta": "Sí. Hacemos proyectos de electrónica y robótica para escuela, colegio y universidad. Cuéntanos qué necesitas y te cotizamos."
+    }
+  ],
+  "nosotros": [
+    "Huellitas 3D nació en Cuenca en 2025, de la pasión por el diseño y la impresión 3D. El nombre viene de una idea simple: cada persona puede dejar su huella en el mundo, y nosotros te ayudamos a que la tuya tome forma.",
+    "Escuchamos tu idea, la diseñamos y la imprimimos capa por capa hasta que la tengas en tus manos. Un retrato de tu mascota, una pieza que tu proyecto necesita o el regalo que nadie más va a tener."
+  ],
+  "contacto": {
+    "whatsapp": "593992642244",
+    "whatsapp_visible": "+593 99 264 2244",
+    "correo": "jhonorteg.ko@gmail.com",
+    "direccion": "Presidente Córdova y Bajada del Vado, Cuenca",
+    "maps": "https://www.google.com/maps/place/HUELLITAS+3D/@-2.8974511,-79.0105898,17z",
+    "horario": [
+      "Lunes a viernes 8:00–18:00",
+      "Sábados 7:00–13:00"
+    ],
+    "facebook": "https://www.facebook.com/share/14dxGsj7DzV/",
+    "tiktok": "https://www.tiktok.com/@huellitas3d1"
+  }
+}

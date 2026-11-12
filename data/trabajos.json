@@ -1,0 +1,145 @@
+{
+  "trabajos": [
+    {
+      "titulo": "Baily",
+      "categoria": "Mascotas",
+      "descripcion": "Retrato 3D de mascota, diseñado a partir de fotos y pintado a mano pelo por pelo, sobre base con su nombre.",
+      "imagen": "img/baily-estudio.webp",
+      "imagenes": [
+        "img/baily.webp",
+        "img/baily-2.webp",
+        "img/baily-3.webp",
+        "img/baily-4.webp"
+      ],
+      "destacado": true,
+      "visible": true,
+      "modelo3d": ""
+    },
+    {
+      "titulo": "Tito",
+      "categoria": "Mascotas",
+      "descripcion": "Retrato de mascota con corona dorada y base personalizada con su nombre.",
+      "imagen": "img/tito.webp",
+      "imagenes": [],
+      "destacado": true,
+      "visible": true,
+      "modelo3d": ""
+    },
+    {
+      "titulo": "San Judas Tadeo",
+      "categoria": "Religiosas",
+      "descripcion": "Imagen religiosa impresa en 3D y pintada a mano con detalles dorados.",
+      "imagen": "img/judas-color.webp",
+      "imagenes": [
+        "img/judas-gris.webp"
+      ],
+      "destacado": true,
+      "visible": true,
+      "modelo3d": ""
+    },
+    {
+      "titulo": "PLC con ESP32",
+      "categoria": "Electrónica y robótica",
+      "descripcion": "Proyecto universitario hecho en equipo: controlador con ESP32, relés, entradas aisladas y fuente propia, montado sobre una base impresa en 3D.",
+      "imagen": "img/plc.webp",
+      "imagenes": [
+        "img/plc-explotado.webp"
+      ],
+      "destacado": true,
+      "visible": true,
+      "modelo3d": ""
+    },
+    {
+      "titulo": "Hugo × 2",
+      "categoria": "Figuras personalizadas",
+      "descripcion": "Par de figuras personalizadas con sombrero, mochila y base con nombre.",
+      "imagen": "img/hugo.webp",
+      "imagenes": [
+        "img/hugo-2.webp"
+      ],
+      "destacado": false,
+      "visible": true,
+      "modelo3d": ""
+    },
+    {
+      "titulo": "Tortuga gigante",
+      "categoria": "Fauna de Galápagos",
+      "descripcion": "Figura de tortuga gigante de Galápagos, impresa y pintada a mano.",
+      "imagen": "img/tortuga.webp",
+      "imagenes": [],
+      "destacado": false,
+      "visible": true,
+      "modelo3d": ""
+    },
+    {
+      "titulo": "Fragata",
+      "categoria": "Fauna de Galápagos",
+      "descripcion": "Fragata con su característico buche rojo inflado.",
+      "imagen": "img/piquero.webp",
+      "imagenes": [],
+      "destacado": false,
+      "visible": true,
+      "modelo3d": ""
+    },
+    {
+      "titulo": "Pingüino de Galápagos",
+      "categoria": "Fauna de Galápagos",
+      "descripcion": "Figura de pingüino pintada a mano.",
+      "imagen": "img/pinguino.webp",
+      "imagenes": [],
+      "destacado": false,
+      "visible": true,
+      "modelo3d": ""
+    },
+    {
+      "titulo": "Lobo marino",
+      "categoria": "Fauna de Galápagos",
+      "descripcion": "Figura de lobo marino pintada a mano.",
+      "imagen": "img/lobo.webp",
+      "imagenes": [],
+      "destacado": false,
+      "visible": true,
+      "modelo3d": ""
+    },
+    {
+      "titulo": "Iguana marina",
+      "categoria": "Fauna de Galápagos",
+      "descripcion": "Figura de iguana marina en gris, lista para pintar o para dejar en su color.",
+      "imagen": "img/iguana.webp",
+      "imagenes": [],
+      "destacado": false,
+      "visible": true,
+      "modelo3d": ""
+    },
+    {
+      "titulo": "Fauna de Galápagos en serie",
+      "categoria": "Producción en serie",
+      "descripcion": "Decenas de figuras de fauna de Galápagos impresas y pintadas para recuerdos.",
+      "imagen": "img/serie.webp",
+      "imagenes": [],
+      "destacado": false,
+      "visible": true,
+      "modelo3d": ""
+    },
+    {
+      "titulo": "Medallas",
+      "categoria": "Producción en serie",
+      "descripcion": "Lote de medallas impresas en 3D con imagen en relieve.",
+      "imagen": "img/medallas.webp",
+      "imagenes": [],
+      "destacado": false,
+      "visible": true,
+      "modelo3d": ""
+    },
+    {
+      "titulo": "Portalápices y organizador",
+      "categoria": "Hogar y organización",
+      "descripcion": "Portalápices con textura geométrica y organizador de cajones, impresos en 3D.",
+      "imagen": "img/taller-poster.webp",
+      "imagenes": [],
+      "destacado": false,
+      "visible": true,
+      "modelo3d": ""
+    }
+  ]
+}

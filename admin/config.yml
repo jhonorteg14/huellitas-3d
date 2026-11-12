@@ -1,0 +1,135 @@
+# Panel de administración de Huellitas 3D (Decap CMS)
+# Cada cambio que guardes aquí se guarda en GitHub y Netlify vuelve a publicar la web sola (1–2 minutos).
+backend:
+  name: github
+  repo: jhonorteg14/huellitas-3d   # usuario/repositorio en GitHub
+  branch: main
+  base_url: https://api.netlify.com  # Netlify hace el inicio de sesión con GitHub
+
+locale: es
+site_url: https://huellitas3d.netlify.app
+display_url: https://huellitas3d.netlify.app
+logo_url: /admin/logo.svg
+
+media_folder: uploads      # aquí se guardan las fotos que subas
+public_folder: uploads
+
+collections:
+  - name: trabajos
+    label: Trabajos realizados
+    description: Agrega, edita, destaca u oculta tus trabajos. Se muestran en la galería de la web.
+    files:
+      - name: lista
+        label: Lista de trabajos
+        file: data/trabajos.json
+        fields:
+          - name: trabajos
+            label: Trabajos
+            label_singular: Trabajo
+            widget: list
+            add_to_top: true
+            summary: "{{fields.titulo}} · {{fields.categoria}}"
+            fields:
+              - { name: titulo, label: Nombre del trabajo, widget: string }
+              - name: categoria
+                label: Categoría
+                widget: select
+                options:
+                  - Mascotas
+                  - Figuras personalizadas
+                  - Fauna de Galápagos
+                  - Religiosas
+                  - Funkos
+                  - Litofanías y lienzos
+                  - Maquetas
+                  - Piezas funcionales
+                  - Hogar y organización
+                  - Producción en serie
+                  - Electrónica y robótica
+                  - Otros
+              - { name: descripcion, label: Descripción corta, widget: text, required: false }
+              - { name: imagen, label: Foto principal, widget: image, choose_url: false }
+              - name: imagenes
+                label: Más fotos (otros ángulos)
+                widget: list
+                required: false
+                field: { name: foto, label: Foto, widget: image, choose_url: false }
+              - { name: destacado, label: "¿Destacado? (aparece primero)", widget: boolean, default: false }
+              - { name: visible, label: "¿Visible en la web?", widget: boolean, default: true }
+              - { name: modelo3d, label: "Modelo 3D (.stl, opcional: se puede girar en la web)", widget: file, required: false, default: "", choose_url: false }
+
+  - name: sitio
+    label: Ajustes de la web
+    files:
+      - name: general
+        label: Textos, precios y contacto
+        file: data/sitio.json
+        fields:
+          - label: Aviso de temporada (barra arriba)
+            name: aviso
+            widget: object
+            collapsed: false
+            fields:
+              - { name: activo, label: "Mostrar aviso", widget: boolean, default: false }
+              - { name: texto, label: Texto del aviso, widget: string }
+              - { name: enlace, label: "Enlace (opcional)", widget: string, required: false }
+          - { name: eslogan, label: Eslogan (titular principal), widget: string }
+          - { name: hero_subtitulo, label: Texto bajo el titular, widget: text }
+          - { name: precio_hora, label: Precio por hora de impresión (USD), widget: number, value_type: float, step: 0.05, min: 0 }
+          - { name: material_incluido, label: "¿El material está incluido?", widget: boolean, default: true }
+          - { name: modelo_destacado, label: "Modelo 3D del inicio (.stl, opcional)", widget: file, required: false, default: "", choose_url: false }
+          - name: servicios
+            label: Servicios
+            label_singular: Servicio
+            widget: list
+            summary: "{{fields.titulo}}"
+            fields:
+              - { name: titulo, label: Nombre, widget: string }
+              - { name: descripcion, label: Descripción, widget: text }
+              - { name: precio_texto, label: Precio o nota, widget: string, required: false }
+              - { name: etiquetas, label: Etiquetas, widget: list, required: false }
+              - { name: imagen, label: "Foto (vacío = ilustración de circuito)", widget: image, required: false, choose_url: false }
+          - name: faq
+            label: Preguntas frecuentes
+            label_singular: Pregunta
+            widget: list
+            summary: "{{fields.pregunta}}"
+            fields:
+              - { name: pregunta, label: Pregunta, widget: string }
+              - { name: respuesta, label: Respuesta, widget: text }
+          - name: nosotros
+            label: Texto de "Nosotros" (un párrafo por elemento)
+            widget: list
+            field: { name: parrafo, label: Párrafo, widget: text }
+          - label: Contacto
+            name: contacto
+            widget: object
+            fields:
+              - { name: whatsapp, label: "WhatsApp (solo números, con 593)", widget: string }
+              - { name: whatsapp_visible, label: WhatsApp como se muestra, widget: string }
+              - { name: correo, label: Correo, widget: string }
+              - { name: direccion, label: Dirección, widget: string }
+              - { name: maps, label: Link de Google Maps, widget: string }
+              - { name: horario, label: Horario (una línea por elemento), widget: list }
+              - { name: facebook, label: Facebook, widget: string, required: false }
+              - { name: tiktok, label: TikTok, widget: string, required: false }
+
+  - name: resenas
+    label: Reseñas
+    files:
+      - name: lista
+        label: Reseñas de clientes
+        file: data/resenas.json
+        fields:
+          - { name: calificacion, label: "Calificación general (ej.: 5,0)", widget: string }
+          - { name: fuente, label: "Fuente (ej.: Google Maps)", widget: string }
+          - name: resenas
+            label: Reseñas
+            label_singular: Reseña
+            widget: list
+            add_to_top: true
+            summary: "{{fields.nombre}}"
+            fields:
+              - { name: nombre, label: Nombre del cliente, widget: string }
+              - { name: texto, label: Lo que dijo, widget: text }
+              - { name: estrellas, label: Estrellas, widget: number, value_type: int, min: 1, max: 5, default: 5 }

@@ -1,0 +1,9 @@
+{
+  "calificacion": "5,0",
+  "fuente": "Google Maps",
+  "resenas": [
+    { "nombre": "Karina Ortega", "texto": "Gracias por hacer realidad lo imposible, excelentes trabajos, recomendado.", "estrellas": 5 },
+    { "nombre": "Andy Ortega", "texto": "Excelente calidad y trabajo.", "estrellas": 5 },
+    { "nombre": "Teresa Jaramillo", "texto": "Excelente, muy recomendable.", "estrellas": 5 }
+  ]
+}
